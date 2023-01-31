@@ -13,7 +13,12 @@
 #             temperatura.append(element)
 #     print(temperatura)
 
+# import pandas as pd
+#
+# data = pd.read_csv("weater_data.csv")
+# print(data)
+
 import pandas as pd
 
-data = pd.read_csv("weater_data.csv")
+data = pd.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
 print(data)
