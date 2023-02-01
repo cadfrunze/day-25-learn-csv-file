@@ -20,5 +20,12 @@
 
 import pandas as pd
 
-data = pd.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
-print(data)
+data = pd.read_csv("weater_data.csv")
+data_dict = data.to_dict()
+
+print(data_dict)
+
+data_temp = data["temp"].tolist()
+print(data_temp)
+average_temp = sum(data_temp) / len(data_temp)
+print(round(average_temp))
