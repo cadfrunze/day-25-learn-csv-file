@@ -41,7 +41,7 @@ data = pd.read_csv("weater_data.csv")
 # max_temp = data.temp.max()
 # print(max_temp)
 # print(data[data.temp == max_temp])
-
+#
 # monday = data[data.day == "Monday"]
 # temperature = int(monday.temp)
 # # temp_fah = (temperature * 1.8) + 32
@@ -49,11 +49,18 @@ data = pd.read_csv("weater_data.csv")
 # print(int((temperature * 1.8) + 32))
 
 data_dict = {
-    "students": ("Maryus", "Iulia", "Sebi"), #hmmmmm....sa incercam cu tuple
-    "skill": (10, 20, 30) # same
+    "students": ["Maryus", "Iulia", "Sebi"],
+    "skill": [10, 20, 30]
 }
 
 data1 = pandas.DataFrame(data_dict)
-print(data1)
-data1.to_csv("testing")
+# print(data1)
+# data1.to_csv("testing")
+# new_data = data1[data1.students == 'Iulia'].to_dict()
+# print(new_data)
+
+max_temp = data[data.temp == data.temp.max()]
+
+print(max_temp)
+
 
