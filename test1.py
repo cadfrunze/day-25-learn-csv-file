@@ -12,3 +12,5 @@
 # mesaj = mesaj.split(',')
 # print(mesaj)
 # print(id(mesaj))
+# with open("work_log.txt","a") as work:
+#     work.write("04.02")
