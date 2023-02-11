@@ -4,6 +4,7 @@ fisier = pd.read_csv('2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv')
 fisier_data = pd.DataFrame(fisier)
 
 data_color = fisier_data['Primary Fur Color']
+print(type(data_color))
 # data_color = data_color.tolist()
 #
 # data_dict = {}
@@ -12,6 +13,7 @@ data_color = fisier_data['Primary Fur Color']
 #
 # print(data_dict)
 data_dict = data_color.value_counts().to_dict()
+print(data_dict)
 data_dict1 = {}
 data_dict1['Fur Color'] = ['grey', 'red', 'black']
 data_dict1['count'] = []
